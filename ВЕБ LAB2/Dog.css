@@ -1,0 +1,69 @@
+.border {
+  border: solid 4px #FF4500;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: double;
+  transition: border-width 0.4s linear;
+}
+.border:hover { border-width: 12px; }
+
+body{
+background: linear-gradient(90deg, #EECFBA, #C5DDE8);
+}
+
+
+h1 {
+    font: bold 2em Arial, Tahome, sans-serif;
+    color: #fff;  background: #9932CC;
+    padding: 0 25px;
+	position: fixed;
+	bottom:0;
+	right:0;
+   }
+
+.ig {
+   margin-top:20px;
+    width: 600px;
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+	position: relative;
+    top: 0.3em;
+	text-align: right;
+}
+
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotateX(0deg);
+        transform:rotateX(0deg);}
+    100% {-webkit-transform:rotateY(360deg);
+        transform:rotateY(360deg);}
+}
+
+.pt::before{
+	content: url("logo.png");
+}
+
+.pt::after{
+	content: url("logo.png");
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+	background: #9ba5b3; width: 315px;     height: 300px;     margin: 20px 0;  padding: 5px;
+}
+
+.flexm {align-self: center; background: #FF1493;    font-size: 2.5rem;     color: #eee;     margin: 3px;     padding: 7px; }
+.flexm:nth-child(3n) {   padding: 3px 6px; }
+.flexm:nth-child(3n+1) { padding: 5px 4px; }
+.flexm:nth-child(3n+2) { padding: 12px 6px; }
+
+.flex-itm {     background: #2e5b61;    font-size: 2.5rem;     color: #eee;     margin: 3px;     padding: 7px; }
+.flex-itm:nth-child(3n) {   padding: 2px 5px; }
+.flex-itm:nth-child(3n+1) { padding: 4px 3px; }
+.flex-itm:nth-child(3n+2) { padding: 10px 5px; }

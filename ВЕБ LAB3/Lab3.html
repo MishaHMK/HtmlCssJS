@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Lab3</title>
+   <link rel = "stylesheet"
+		href = "Lab3.css">
+		<script src="Lab3.js"></script>
+ </head>
+
+ <body>
+ <div class="work">
+<p>
+ Привіт! Не знаю як і чому <strong> Ви </strong> сюди зайшли,<br> але давайте навчимося переходити на сайт <strong> ЛЬВІВСЬКОЇ ПОЛІТЕХНІКИ</strong>
+ </p>
+<p>
+ <cite>
+ <strong>У П Е Р Е Д</strong>
+ </cite>
+</p>
+<a>
+</a>
+</div>
+
+<script>
+	var pE = document.getElementsByTagName("p");
+	var aE = document.getElementsByTagName("a");
+	var str1 = "Число абзаців: ";
+	var str2 = "Число посилань: ";
+	var res1 = str1.concat(pE.length);
+	var res2 = str2.concat(aE.length);
+	alert(res1);
+	alert(res2);
+</script>
+
+ <script>
+var numb = prompt("Введіть число від 0 до 100");
+  
+  if(numb < 25){
+     alert("Мамо, я до дому, надовго...");
+  } else if(numb < 50){
+     alert("Походу повторка");
+  }else if(numb >= 50 && numb <= 70){
+    alert("Життя продовжується");
+  }else if(numb >= 71 && numb <= 87){
+    alert("Красава");
+  }else
+    alert("Фантастика!");
+</script>
+<script>
+	  var str = confirm("Пофарбувати текст в синій, а фон в жовтий?");
+   if(str == true){
+	     var workDiv = document.querySelector("div.work");
+		 workDiv.style.color = 'blue';
+		 workDiv.style.background = 'yellow';
+	}
+	else{
+	alert("Місія відмінена");
+	}
+</script>
+
+<button id ='open' class = "button">Зайти</button>
+<button id ='close' class = "button">Вийти</button>
+
+<script> 
+	var win; 
+	 document.getElementById('open').addEventListener('click', function(){
+		win = window.open("https://lpnu.ua/", "НУЛП", "toolbar = no, location = no, width=500,height=600, left = 520, top = 100");
+	});
+
+	 document.getElementById('close').addEventListener('click', function(){
+		win.close();
+	});  
+
+</script>
+
+
+
+</body>
+</html>
